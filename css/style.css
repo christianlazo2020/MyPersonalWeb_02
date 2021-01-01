@@ -1,0 +1,382 @@
+/*Globales*/
+*,
+*:before,
+*after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kalam", cursive;
+  line-height: 1.8;
+  letter-spacing: 0.5rem;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+/*Utilities*/
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 4.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mg-top {
+  margin-top: 4rem;
+}
+
+/*Header*/
+
+header {
+}
+
+.site-header {
+  background-color: #031321;
+  height: 100vh;
+  min-height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.site-header h1 {
+  color: white;
+  margin-left: 2rem;
+  font-weight: 300;
+}
+
+/* .animate__animated.animate__bounce,
+.animate__animated.animate__bounceInLeft {
+  --animate-duration: 1.5s;
+} */
+
+.bar {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-nav a {
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  margin-right: 1rem;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.site-nav a:hover {
+  /* color: #255784; */
+  color: white;
+  background: #2196f3;
+  box-shadow: 0 0 1rem #2196f3, 0 0 4rem #2196f3, 0 0 8rem #2196f3;
+  transition-delay: 0.3s;
+}
+
+.site-socialmedia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.site-socialmedia img {
+  max-width: 40rem;
+}
+
+.site-socialmedia-contact {
+  border: 1px solid white;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1.5rem;
+  min-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.site-socialmedia-contact:hover {
+  color: white;
+  background: #2196f3;
+  box-shadow: 0 0 1rem #2196f3, 0 0 4rem #2196f3, 0 0 8rem #2196f3;
+  transition-delay: 0.3s;
+  cursor: pointer;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+}
+
+.social-media i {
+  font-size: 5rem;
+  color: white;
+  padding: 4rem 0;
+  transform: scale(1, 1);
+  transition: 0.5s;
+}
+
+.social-media i:hover {
+  color: #2196f3;
+  cursor: pointer;
+  transform: scale(1.4, 1.4);
+  transition: 0.5s;
+}
+
+/*Main-about me*/
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  background-color: #031321;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+
+.card-img {
+  flex-basis: 35%;
+}
+
+.card-img img {
+  border-radius: 50%;
+}
+
+.card-p {
+  flex-basis: 48%;
+}
+
+.card-p p {
+  font-size: 2rem;
+  color: white;
+  line-height: 2;
+}
+
+/*Projects*/
+
+.site-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #031321;
+  padding: 0rem 2rem 8rem 2rem;
+}
+
+.card-content {
+  flex-basis: calc(100% / 3 - 5rem);
+  margin: 3rem 0;
+  min-height: 45rem;
+  padding: 1.5rem;
+  box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 10rem;
+  border-top-left-radius: 10rem;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.5rem solid rgba(255, 255, 255, 0.2);
+  border-left: 0.5rem solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1.5px);
+  transition: 0.5s;
+  opacity: 1;
+  transform: translateY(5rem);
+}
+
+.card-content:hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-content h4 {
+  font-size: 2.5rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.card-content p {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.card-content a {
+  margin-top: 2.5rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.card-content a:hover {
+  background-color: #2196f3;
+  transition: 0.5s;
+}
+
+/*kHoledgue*/
+
+.site-khowledgue {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-khowledgue i {
+  font-size: 10rem;
+  transform: scale(1, 1);
+  transition: 0.5s;
+}
+
+.site-khowledgue i:hover {
+  color: #2196f3;
+  transform: scale(1.5, 1.5);
+  transition: 0.5s;
+}
+
+/*Footer*/
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #031321;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0 0 0;
+}
+
+.site-footer p {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.icons-footer {
+  display: flex;
+  flex-direction: row;
+  min-width: 40rem;
+  justify-content: space-between;
+}
+
+.icons-footer i {
+  font-size: 5rem;
+}
+
+/*******************************************Media Queries************************************************/
+
+@media (max-width: 768px) {
+  .site-header {
+    height: 100%;
+  }
+  .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-socialmedia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media {
+    display: flex;
+    min-width: 40rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-media i {
+    margin: 0 2rem;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-khowledgue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-khowledgue i {
+    font-size: 15rem;
+    margin-bottom: 4rem;
+  }
+
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
